@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EBFC3C2B29942F560023665B /* coincidencia_trackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC3C2A29942F560023665B /* coincidencia_trackerApp.swift */; };
+		EBD6D569299430AF009964E5 /* CoincidenciaReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6D568299430AF009964E5 /* CoincidenciaReporter.swift */; };
+		EBFC3C2B29942F560023665B /* Coincidencia_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC3C2A29942F560023665B /* Coincidencia_TrackerApp.swift */; };
 		EBFC3C2D29942F560023665B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC3C2C29942F560023665B /* ContentView.swift */; };
 		EBFC3C2F29942F560023665B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFC3C2E29942F560023665B /* Assets.xcassets */; };
 		EBFC3C3229942F560023665B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFC3C3129942F560023665B /* Preview Assets.xcassets */; };
@@ -36,8 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EBD6D568299430AF009964E5 /* CoincidenciaReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincidenciaReporter.swift; sourceTree = "<group>"; };
 		EBFC3C2729942F560023665B /* coincidencia tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coincidencia tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBFC3C2A29942F560023665B /* coincidencia_trackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coincidencia_trackerApp.swift; sourceTree = "<group>"; };
+		EBFC3C2A29942F560023665B /* Coincidencia_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coincidencia_TrackerApp.swift; sourceTree = "<group>"; };
 		EBFC3C2C29942F560023665B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EBFC3C2E29942F560023665B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBFC3C3129942F560023665B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -98,10 +100,11 @@
 		EBFC3C2929942F560023665B /* coincidencia tracker */ = {
 			isa = PBXGroup;
 			children = (
-				EBFC3C2A29942F560023665B /* coincidencia_trackerApp.swift */,
-				EBFC3C2C29942F560023665B /* ContentView.swift */,
+				EBFC3C5B29942FA80023665B /* CoincidenciaPersistence */,
+				EBFC3C5A29942F8A0023665B /* CoincidenciaReporter */,
+				EBFC3C5929942F680023665B /* CoincidenciaRegister */,
+				EBFC3C2A29942F560023665B /* Coincidencia_TrackerApp.swift */,
 				EBFC3C2E29942F560023665B /* Assets.xcassets */,
-				EBFC3C3329942F560023665B /* Persistence.swift */,
 				EBFC3C3529942F560023665B /* coincidencia_tracker.xcdatamodeld */,
 				EBFC3C3029942F560023665B /* Preview Content */,
 			);
@@ -131,6 +134,30 @@
 				EBFC3C4C29942F570023665B /* coincidencia_trackerUITestsLaunchTests.swift */,
 			);
 			path = "coincidencia trackerUITests";
+			sourceTree = "<group>";
+		};
+		EBFC3C5929942F680023665B /* CoincidenciaRegister */ = {
+			isa = PBXGroup;
+			children = (
+				EBFC3C2C29942F560023665B /* ContentView.swift */,
+			);
+			path = CoincidenciaRegister;
+			sourceTree = "<group>";
+		};
+		EBFC3C5A29942F8A0023665B /* CoincidenciaReporter */ = {
+			isa = PBXGroup;
+			children = (
+				EBD6D568299430AF009964E5 /* CoincidenciaReporter.swift */,
+			);
+			path = CoincidenciaReporter;
+			sourceTree = "<group>";
+		};
+		EBFC3C5B29942FA80023665B /* CoincidenciaPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				EBFC3C3329942F560023665B /* Persistence.swift */,
+			);
+			path = CoincidenciaPersistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +291,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBFC3C3429942F560023665B /* Persistence.swift in Sources */,
+				EBD6D569299430AF009964E5 /* CoincidenciaReporter.swift in Sources */,
 				EBFC3C2D29942F560023665B /* ContentView.swift in Sources */,
-				EBFC3C2B29942F560023665B /* coincidencia_trackerApp.swift in Sources */,
+				EBFC3C2B29942F560023665B /* Coincidencia_TrackerApp.swift in Sources */,
 				EBFC3C3729942F560023665B /* coincidencia_tracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -407,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
